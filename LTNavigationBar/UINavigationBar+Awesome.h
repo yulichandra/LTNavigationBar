@@ -13,4 +13,5 @@
 - (void)lt_setElementsAlpha:(CGFloat)alpha;
 - (void)lt_setTranslationY:(CGFloat)translationY;
 - (void)lt_reset;
+- (void)lt_resetWithNavigationBackgroundImage:(UIImage *)image;
 @end

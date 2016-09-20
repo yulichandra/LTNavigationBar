@@ -64,9 +64,15 @@ static char overlayKey;
 
 - (void)lt_reset
 {
-    [self setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    [self lt_resetWithNavigationBackgroundImage:nil];
+}
+
+- (void)lt_resetWithNavigationBackgroundImage:(UIImage *)image
+{
+    [self setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
     [self.overlay removeFromSuperview];
     self.overlay = nil;
 }
+
 
 @end
